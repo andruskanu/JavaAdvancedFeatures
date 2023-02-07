@@ -1,9 +1,0 @@
-package oopconcepts.animals;
-
-public class Cat extends Animal{
-
-    @Override
-    public String makeSound(){
-        return "Miau";
-    }
-}
