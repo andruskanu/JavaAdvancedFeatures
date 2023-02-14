@@ -9,25 +9,25 @@ public class LinkedListMain {
 
         List<String> stringLinkedList = new LinkedList<>();
 
-        stringLinkedList.add("patru");
-        stringLinkedList.add("trei");
-        stringLinkedList.add("doi");
-        stringLinkedList.add("patru");
-        stringLinkedList.add("patru");
-        stringLinkedList.add("patru");
-        stringLinkedList.add("patru");
+        stringLinkedList.add("four");
+        stringLinkedList.add("three");
+        stringLinkedList.add("two");
+        stringLinkedList.add("four");
+        stringLinkedList.add("four");
+        stringLinkedList.add("four");
+        stringLinkedList.add("four");
 
         System.out.println(stringLinkedList);
         String firstWord = stringLinkedList.get(0);
         int counter = 0;
         for (int i = 0; i < stringLinkedList.size(); i++) {
-            String curentWord = stringLinkedList.get(i);
-            if (firstWord.equals(curentWord)) {
+            String currentWord = stringLinkedList.get(i);
+            if (firstWord.equals(currentWord)) {
                 counter++;
             }
         }
-        System.out.println("Primul cuvant este " + stringLinkedList.get(0) +
-                " si apare de " + counter + " ori.");
+        System.out.println("First word is " + stringLinkedList.get(0) +
+                " and it is displayed for " + counter + " times.");
     }
 }
 

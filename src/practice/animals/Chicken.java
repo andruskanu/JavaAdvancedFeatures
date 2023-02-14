@@ -1,12 +1,27 @@
 package practice.animals;
 
+import practice.animals.enums.Species;
 import practice.food.Eatable;
 
 public class Chicken extends Animal implements Eatable {
 
+    private String name;
+
+    Chicken(String name){
+        super(Species.CHICKEN);
+        this.name = name;
+        totalCount++;
+        animalList.add(this.name);
+    }
+
+    @Override
+    public String getName(){
+        return this.name;
+    }
+
     @Override
     public String makeSound() {
-        return "piu piu";
+        return "Piu Piu";
     }
 
     @Override
