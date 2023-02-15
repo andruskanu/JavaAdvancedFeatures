@@ -16,7 +16,7 @@ public class HashMapMain {
         Dog dog4 = new Dog("Ares", 51);
 
         dogs.put(dog1.getId(), dog1);
-        dogs.put(1, dog2);
+        dogs.put(dog2.getId(), dog2);
         dogs.put(dog3.getId(), dog3);
         dogs.put(dog4.getId(), dog4);
 
@@ -25,8 +25,8 @@ public class HashMapMain {
             System.out.println(dogs.get(key).getName());
         }
 
-        for(Dog dog : dogs.values()){
-            System.out.println(dog.getName());
+        for (Dog d : dogs.values()) {
+            System.out.println(d.getName() + " " + d.getId() + " " + d.getSpecies());
         }
     }
 }

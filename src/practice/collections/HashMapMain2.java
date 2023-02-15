@@ -1,7 +1,6 @@
 package practice.collections;
 
 import practice.animals.Cat;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,7 +8,7 @@ public class HashMapMain2 {
 
     public static void main(String[] args) {
 
-        Map<Integer, Cat> cats = new HashMap<Integer, Cat>();
+        Map<Integer, Cat> cats = new HashMap<>();
 
         Cat cat1 = new Cat("Katia", 22);
         Cat cat2 = new Cat("Martina", 8);
@@ -21,8 +20,8 @@ public class HashMapMain2 {
         cats.put(cat3.getId(), cat3);
         cats.put(cat4.getId(), cat4);
 
-        Integer biggestId = Integer.MIN_VALUE;
-        Integer smallestId = Integer.MAX_VALUE;
+        int biggestId = Integer.MIN_VALUE;
+        int smallestId = Integer.MAX_VALUE;
 
         for (Integer key : cats.keySet()) {
             System.out.print(key + " ");
@@ -37,8 +36,8 @@ public class HashMapMain2 {
         System.out.println("Biggest id is: " + biggestId);
         System.out.println("Smallest id is: " + smallestId);
 
-        Integer maxLength = Integer.MIN_VALUE;
-        Integer minLength = Integer.MAX_VALUE;
+        int maxLength = Integer.MIN_VALUE;
+        int minLength = Integer.MAX_VALUE;
 
         Cat shortestNameCat = null;
         Cat longestNameCat = null;
@@ -54,8 +53,10 @@ public class HashMapMain2 {
                 shortestNameCat = c;
             }
         }
-        System.out.println("Largest name is: " + longestNameCat.getName() + " with " + maxLength + " characters.");
-        System.out.println("Shortest name is: " + shortestNameCat.getName() + " with " + minLength + " characters.");
+        System.out.println("Largest name is: " + longestNameCat.getName() +
+                " with " + maxLength + " characters.");
+        System.out.println("Shortest name is: " + shortestNameCat.getName() +
+                " with " + minLength + " characters.");
     }
 }
 

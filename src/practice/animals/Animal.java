@@ -1,7 +1,6 @@
 package practice.animals;
 
 import practice.animals.enums.Species;
-
 import java.util.ArrayList;
 import java.util.List;
 
