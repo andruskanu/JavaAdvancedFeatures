@@ -1,4 +1,4 @@
-package practice;
+package recap;
 
 public class Point2D {
 

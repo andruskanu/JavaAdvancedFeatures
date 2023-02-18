@@ -1,6 +1,6 @@
 package practice.shapes2;
 
-public class Shape2Main {
+public class Shapes2Main {
 
     public static void main(String[] args) {
 
